@@ -1,0 +1,30 @@
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 7.56vh;
+}
+
+.header__logo {
+  width: 27.77%;
+}
+
+.lupa__logo {
+  width: 4.71%;
+}
+
+.header__btn__login {
+  width: 7.07vw;
+  height: 4.2vh;
+  padding: 0.75rem, 1rem, 0.75rem, 1rem;
+  background-color: white;
+  border-color: #2a7ae4;
+}
+
+.btnLogin__txt {
+  font-size: 1.7vh;
+  font-weight: 400;
+  color: #2a7ae4;
+}
