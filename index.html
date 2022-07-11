@@ -4,19 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="estilos/reset.css" />
     <link rel="stylesheet" href="estilos/normalize.css" />
+    <link rel="stylesheet" href="estilos/reset.css" />
     <link rel="stylesheet" href="estilos/base.css" />
     <link rel="stylesheet" href="estilos/HEADER/header.css" />
+    <link rel="stylesheet" href="estilos/PROMOCION/promocion.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <title>E-commer</title>
   </head>
   <body class="body">
     <header class="header">
-      <img class="header__logo" src="estilos/HEADER/recursos/logo_alura.svg" alt="Logo alura" />
-      <button class="header__btn__login"><a href="" target="_blank"> <span class="btnLogin__txt">  Login </span></a></button>
-      <img class="lupa__logo" src="estilos/HEADER/recursos/lupa.svg" alt="Lupa buscador" />
+      <img
+        class="header__logo"
+        src="estilos/HEADER/recursos/logo_alura.svg"
+        alt="Logo alura"
+      />
+      <button class="header__btn__login">
+        <a href="" target="_blank">
+          <span class="btnLogin__txt"> Login </span></a
+        >
+      </button>
+      <img
+        class="lupa__logo"
+        src="estilos/HEADER/recursos/lupa.svg"
+        alt="Lupa buscador"
+      />
+      
     </header>
-    <section class="seccion__promocion"></section>
+    <section class="seccion__promocion">
+      <div class="promocion__info"> 
+      <h1 class="promocion__titulo">Febrero Promocional</h1>
+      <span class="promocion__info">Productos seleccionados con 33% de descuento</span>
+      <button class="btn__promocion"> <a href="http://" target="_blank" rel="noopener noreferrer"></a> Ver consolas</button>
+    </div>
+    </section>
     <main class="productos">
       <section class="seccion__productos producto--star_wars"></section>
       <section class="seccion__productos producto--consolas"></section>

@@ -4,12 +4,14 @@
   box-sizing: border-box;
 }
 
-a:hover , a:focus , a:visited {
+a:hover,
+a:focus,
+a:visited {
   text-decoration: none;
 }
 
 body {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   max-width: 19.159vw;
   display: grid;
   grid-template-areas:
@@ -17,10 +19,7 @@ body {
     "promocion"
     "productos"
     "footer";
-}
-
-.seccion__promocion {
-  grid-area: promocion;
+    font-family: 'Raleway', sans-serif;
 }
 
 .productos {
@@ -30,3 +29,4 @@ body {
 .footer {
   grid-area: footer;
 }
+
