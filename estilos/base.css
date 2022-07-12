@@ -13,13 +13,16 @@ a:visited {
 body {
   /* min-height: 100vh; */
   max-width: 19.159vw;
+  min-width: 360px;
   display: grid;
+  font-family: 'Raleway', sans-serif;
   grid-template-areas:
     "header"
     "promocion"
-    "productos"
+    "star_wars"
+    "consolas"
+    "diversos"
     "footer";
-    font-family: 'Raleway', sans-serif;
 }
 
 .productos {

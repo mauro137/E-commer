@@ -1,0 +1,64 @@
+.seccion__productos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 588px;
+  padding: 0.85vw;
+  gap: 3%;
+}
+/* Titulo, enlace ver todo y vector */
+.seccion__titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.titulos__estilos {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 1vw;
+  line-height: 1.3vw;
+}
+
+.ver__todo__contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link__ver-todo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 0.8vw;
+  line-height: 0.35vw;
+  color: #2a7ae4;
+}
+
+.ver__todo-vector {
+  width: 1vw;
+  height: 1vw;
+}
+
+/* Tarjetas Productos */
+
+.contenedor__tarjetas {
+  display: grid;
+  gap: 2%;
+  justify-items: start;
+  grid-auto-rows: 15rem;
+  grid-template-columns: repeat(auto-fill, minmax(9.75rem, 1fr));
+  width: 100%;
+}
+
+.tarjeta__producto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1%;
+  border: 2px solid black;
+}
+
+/* caja base de secciones de los productos
+ */

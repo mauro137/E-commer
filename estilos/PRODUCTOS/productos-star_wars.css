@@ -1,0 +1,4 @@
+.producto--star_wars {
+  grid-area: star_wars;
+  height: 500px;
+}

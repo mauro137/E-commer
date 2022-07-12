@@ -9,10 +9,16 @@
     <link rel="stylesheet" href="estilos/base.css" />
     <link rel="stylesheet" href="estilos/HEADER/header.css" />
     <link rel="stylesheet" href="estilos/PROMOCION/promocion.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/PRODUCTOS/productos-productos.css" />
+    <link rel="stylesheet" href="estilos/PRODUCTOS/productos-star_wars.css" />
+    <link rel="stylesheet" href="estilos/PRODUCTOS/productos-consolas.css" />
+    <link rel="stylesheet" href="estilos/PRODUCTOS/productos-diversos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>E-commer</title>
   </head>
   <body class="body">
@@ -32,20 +38,75 @@
         src="estilos/HEADER/recursos/lupa.svg"
         alt="Lupa buscador"
       />
-      
     </header>
     <section class="seccion__promocion">
-      <div class="promocion__info"> 
-      <h1 class="promocion__titulo">Febrero Promocional</h1>
-      <span class="promocion__info">Productos seleccionados con 33% de descuento</span>
-      <button class="btn__promocion"> <a href="http://" target="_blank" rel="noopener noreferrer"></a> Ver consolas</button>
-    </div>
+      <div class="promocion__info">
+        <h1 class="promocion__titulo">Febrero Promocional</h1>
+        <span class="promocion__info"
+          >Productos seleccionados con 33% de descuento</span
+        >
+        <button class="btn__promocion">
+          <a href="http://" target="_blank" rel="noopener noreferrer"></a> Ver
+          consolas
+        </button>
+      </div>
     </section>
-    <main class="productos">
-      <section class="seccion__productos producto--star_wars"></section>
-      <section class="seccion__productos producto--consolas"></section>
-      <section class="seccion__productos producto--diversos"></section>
-    </main>
+
+    <section class="seccion__productos producto--star_wars">
+      <div class="seccion__titulo">
+        <h2 class="titulos__estilos">Star Wars</h2>
+        <div class="ver__todo__contenedor">
+          <a
+            class="ver__todo__contenedor"
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="link__ver-todo"> Ver Todo</span>
+            <img
+              class="ver__todo-vector"
+              src="estilos/PRODUCTOS/recursos/ver__todo-vector.png"
+              alt="foto flecha vector"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="contenedor__tarjetas">
+        <div class="tarjeta__producto">
+          <img
+            src="estilos/PRODUCTOS/recursos/star-wars/taza.svg"
+            alt="Taza star wars"
+          />
+        <p> Taza star wars</p>
+        <span> 40 pesitos</span>
+        <a href="http://" target="_blank" rel="noopener noreferrer">Ver producto</a>
+        </div>
+        <div class="tarjeta__producto">
+          <img
+            src="estilos/PRODUCTOS/recursos/star-wars/adornos.svg"
+            alt="Adorno villano"
+          />
+        </div>
+        <div class="tarjeta__producto">
+          <img src="estilos/PRODUCTOS/recursos/star-wars/yoda.svg" alt="yoda" />
+        </div>
+        <div class="tarjeta__producto">
+          <img
+            src="estilos/PRODUCTOS/recursos/star-wars/soldado.svg"
+            alt="soldado"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="seccion__productos producto--consolas">
+      <div class="seccion__titulo"></div>
+      <div></div>
+    </section>
+    <section class="seccion__productos producto--diversos">
+      <div class="seccion__titulo"></div>
+      <div></div>
+    </section>
+
     <footer class="footer">
       <section class="seccion__contacto"></section>
       <section class="seccion__rodapie"></section>
