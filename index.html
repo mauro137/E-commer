@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="estilos/PRODUCTOS/productos-star_wars.css" />
     <link rel="stylesheet" href="estilos/PRODUCTOS/productos-consolas.css" />
     <link rel="stylesheet" href="estilos/PRODUCTOS/productos-diversos.css" />
+    <link rel="stylesheet" href="estilos/FOOTER/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -301,9 +302,30 @@
 
     <footer class="footer">
       <section class="seccion__contacto">
-        
+        <div class="footer__info__frecuente"> 
+          <div class="footer__contenedor__logo"> 
+        <img class="footer__logo__alura" src="estilos/HEADER/recursos/logo_alura.svg" alt="logo alura">
+      </div>
+        <div class="info__frecuente__links"> 
+          <a class="info__links-links" href="http://" target="_blank" rel="noopener noreferrer">Quienes somos</a>
+          <a class="info__links-links" href="http://" target="_blank" rel="noopener noreferrer">Politica de privacidad</a>
+          <a class="info__links-links" href="http://" target="_blank" rel="noopener noreferrer">Programa de fidelidad</a>
+          <a class="info__links-links" href="http://" target="_blank" rel="noopener noreferrer">Nuestras tiendas</a>
+          <a class="info__links-links" href="http://" target="_blank" rel="noopener noreferrer">Quiero ser franquiciado</a>
+          <a class="info__links-links" href="http://" target="_blank" rel="noopener noreferrer">Anuncie aqui</a>
+        </div>
+      </div>
+      
+      <form class="contacto__form">
+        <span class="producto__precio">Habla con nosotros</span>
+        <input type="text" placeholder="Nombre" spellcheck="false" autocomplete="off">
+        <textarea name="mensaje" id="mensaje" cols="20" rows="4" placeholder="Escribe un mensaje"></textarea>
+        <button class="btn__promocion" type="submit">Enviar Mensaje</button>
+      </form>
       </section>
-      <section class="seccion__rodapie"></section>
+      <section class="seccion__rodapie">
+        <div class="web__autor">Desarrollado por Mauro Lizarriaga</div>
+      </section>
     </footer>
   </body>
 </html>
