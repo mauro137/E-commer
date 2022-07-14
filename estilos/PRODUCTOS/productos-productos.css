@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  padding: 0.85vw;
+  padding: 1em;
 }
 /* Titulo, enlace ver todo y vector */
 .seccion__titulo {
@@ -25,7 +25,7 @@
 
 .ver__todo__contenedor {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .link__ver-todo {
@@ -44,11 +44,12 @@
 
 .contenedor__tarjetas {
   display: grid;
-  gap: 2%;
+    gap: 4% 3%;
   justify-items: start;
   grid-auto-rows: 15rem;
   grid-template-columns: repeat(auto-fill, minmax(9.75rem, 1fr));
   width: 100%;
+  
 }
 
 .tarjeta__producto {
@@ -56,6 +57,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 2%;
+
 }
 .producto__nombre {
   font-family: Raleway;
@@ -78,6 +80,11 @@
   font-size: 14px;
   line-height: 16px;
   color: #2a7ae4;
+}
+
+.tarjeta__imagen {
+  width: clamp(9.75rem, 10rem, 11rem);
+  
 }
 /* caja base de secciones de los productos
  */
