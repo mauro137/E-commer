@@ -3,14 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
-input,textarea{
+input {
   border: none;
   border-radius: 4px;
   width: 100%;
+  height: 56px;
 }
-input:focus , textarea:focus{
-  outline:none;
-} 
+textarea {
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  height: 82px;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
 a:hover,
 a:focus,
 a:visited {
@@ -19,10 +27,11 @@ a:visited {
 
 body {
   /* min-height: 100vh; */
-  max-width: 19.159vw;
+  /*  max-width: 19.159vw; */
+  max-width: 1440px;
   min-width: 360px;
   display: grid;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   grid-template-areas:
     "header"
     "promocion"
@@ -32,11 +41,9 @@ body {
     "footer";
 }
 
-.productos {
-  grid-area: productos;
+/* @media screen and (max-width: 1440px) {
+  .seccion__promocion {
+   background-image: url("/estilos/PROMOCION/recursos/banner_1440x192.png");
+  }
 }
-
-.footer {
-  grid-area: footer;
-}
-
+ */

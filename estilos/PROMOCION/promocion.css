@@ -4,15 +4,17 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  width: 100%;
+  height: 192px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%),
     url("/estilos/PROMOCION/recursos/banner_mobile.png");
-  padding: 0.85vw;
-  width: 100%;
-  height: 192px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  padding: 1rem;
 }
 
 .promocion__info {
@@ -29,17 +31,23 @@
 }
 
 .promocion__titulo {
-  font-size: 1.17vw;
+  font-size: clamp(1.375rem, -0.9688rem + 7.5vw, 3.25rem);
 }
 .promocion__info {
-  font-size: 0.74vw;
+  font-size: clamp(0.875rem, 0.25rem + 2vw, 1.375rem);
 }
 
 .btn__promocion {
-  width: 7.07vw;
-  height: 4.2vh;
+  width: clamp(118px, 6, 5vw, 129px);
+  height: 40px;
   background-color: #2a7ae4;
   color: white;
   cursor: pointer;
   border: none;
+  font-size: 1rem;
+}
+
+.btn__texto {
+  padding: 12px 16px 12px 16px;
+  gap: 10px;
 }

@@ -4,7 +4,6 @@
   align-items: flex-start;
   width: 100%;
   padding: 0.85vw;
-  
 }
 /* Titulo, enlace ver todo y vector */
 .seccion__titulo {
@@ -13,12 +12,14 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding-bottom: 1em;
+  padding-top: 1em;
 }
 
 .titulos__estilos {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 1vw;
+  font-size: clamp(1.375rem, 0.5938rem + 2.5vw, 2rem);
   line-height: 1.3vw;
 }
 
@@ -30,14 +31,13 @@
 .link__ver-todo {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 0.8vw;
+  font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
   line-height: 0.35vw;
   color: #2a7ae4;
 }
 
 .ver__todo-vector {
-  width: 1vw;
-  height: 1vw;
+  width: clamp(10px, 13px, 16px);
 }
 
 /* Tarjetas Productos */
@@ -49,8 +49,6 @@
   grid-auto-rows: 15rem;
   grid-template-columns: repeat(auto-fill, minmax(9.75rem, 1fr));
   width: 100%;
-  
-  
 }
 
 .tarjeta__producto {
@@ -58,30 +56,28 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 2%;
- 
 }
-.producto__nombre{
+.producto__nombre {
   font-family: Raleway;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
-
 }
 
-.producto__precio{
-  font-family: 'Raleway';
+.producto__precio {
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   color: #464646;
 }
 
-.producto__link{
-  font-family: 'Raleway';
+.producto__link {
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  color: #2A7AE4;
+  color: #2a7ae4;
 }
 /* caja base de secciones de los productos
  */
