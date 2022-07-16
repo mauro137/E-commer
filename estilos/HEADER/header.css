@@ -11,6 +11,17 @@
   width: clamp(100px, 140px, 175px);
 }
 
+.buscador {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  gap: 8px;
+  background: #f5f5f5;
+  border-radius: 20px;
+}
+.buscador__input {
+  display: none;
+}
 .lupa__logo {
   cursor: pointer;
   width: clamp(17.05px, 1.07vw, 25px);
@@ -19,7 +30,7 @@
 .header__btn__login {
   background-color: white;
   border-color: #2a7ae4;
-  
+
   width: clamp(133px, 8.5vw, 182px);
   height: 30px;
 }

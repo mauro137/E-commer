@@ -2,21 +2,22 @@
   grid-area: footer;
   display: flex;
   flex-flow: column wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background: #eaf2fd;
-  padding: 1rem;
-  gap: 1rem;
+  padding: clamp(1rem, -2.75rem + 12vw, 4rem);
+  gap: clamp(1rem, -2.75rem + 12vw, 4rem);  
   width: 100%;
-  
+  height: auto;
 }
 
 .footer__info__frecuente {
-  min-width: 300px;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 /* Parte de los enlaces a informacion util */
@@ -55,8 +56,9 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-  width: 100%;
-  padding: 1rem;
+  min-width: 328px;
+ 
+  
 }
 
 /* Rodapie */
@@ -64,7 +66,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 102px;
+  height: 100px;
   width: 100%;
 }
 

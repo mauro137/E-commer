@@ -24,10 +24,14 @@ a:focus,
 a:visited {
   text-decoration: none;
 }
-
+::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
 body {
   /* min-height: 100vh; */
   /*  max-width: 19.159vw; */
+  
   min-width: 360px;
   max-width: 1440px;
   gap: 0.7%;
@@ -41,3 +45,4 @@ body {
     "diversos"
     "footer";
 }
+
