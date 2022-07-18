@@ -1,4 +1,4 @@
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px ) {
     .buscador__input{
       display: block;
     }
@@ -20,4 +20,18 @@
         
     }
 
+  }
+
+  @media only screen and (min-width: 1440px) {
+    .login__form{
+      width: 423px;
+      height: 291px;
+      
+    }
+    .login__button{
+      width: 100%;
+    }
+    .login__form-titulo{
+      font-size: 22px;
+    }
   }

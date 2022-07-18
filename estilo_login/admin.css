@@ -1,0 +1,56 @@
+.panel__admin {
+  min-height: 100vh;
+}
+
+.agregar__producto {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+}
+
+.agregar__producto__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 1rem;
+  padding: 0.85vw;
+}
+
+.panel__titulo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 26px;
+}
+
+.form__input__box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid #C8C8C8;
+    width: 100%;
+    border-radius: 4px;
+    gap: 4px;
+    height: 56px;
+}
+
+.label__input__form{
+font-family:'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 0.75rem;
+line-height: 1rem;
+display: flex;
+align-items: center;
+color: #A2A2A2;
+}
+
+#producto__descripcion{
+  resize: none;
+}
+.login__button--producto{
+  width: 100%;
+}

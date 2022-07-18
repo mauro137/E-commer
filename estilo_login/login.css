@@ -6,20 +6,21 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  height: 325px;
+  height: 350px;
   
 }
 .login__form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1.5rem;
   align-items: center;
   width: 275px;
   height: 220px;
   
 }
 .login__form-titulo {
-  font-family: Raleway;
+  font-family: "Raleway" , sans-serif;
   font-size: 1rem;
   font-weight: 700;
   line-height: 19px;
