@@ -1,37 +1,36 @@
-@media only screen and (min-width: 768px ) {
-    .buscador__input{
-      display: block;
-    }
+@media only screen and (min-width: 768px)  {
+  .buscador__input {
+    display: block;
+  }
 
-    .footer__info__frecuente{
-        order: 1;
+  .footer__info__frecuente {
+    order: 1;
+  }
+  .info__frecuente__links {
+    align-items: flex-start;
+  }
+
+  .contacto__form {
+    order: 2;
+  }
+  .seccion__contacto {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .login__form {
+    width: 423px;
+    height: 291px;
+  }
+  .login__button {
+    width: 100%;
+  }
+  .login__form-titulo {
+    font-size: 22px;
+  }
+  .agregar__producto__form {
+    width: 50%;
     
-    }
-    .info__frecuente__links{
-        align-items: flex-start;
-      }
-
-    .contacto__form{    
-        order: 2;
-        
-    }
-    .seccion__contacto{
-        flex-direction: row;
-        
-    }
-
   }
-
-  @media only screen and (min-width: 1440px) {
-    .login__form{
-      width: 423px;
-      height: 291px;
-      
-    }
-    .login__button{
-      width: 100%;
-    }
-    .login__form-titulo{
-      font-size: 22px;
-    }
-  }
+}
