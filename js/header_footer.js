@@ -32,14 +32,18 @@ class MyFooter extends HTMLElement {
       <footer class="footer">
       <section class="seccion__contacto">
         <div class="footer__info__frecuente">
-          <div class="footer__contenedor__logo">
-            <img
-              class="footer__logo__alura"
-              src="estilos/HEADER/recursos/logo_alura.svg"
-              alt="logo alura"
-            />
-          </div>
+  
+        
+
+        
           <div class="info__frecuente__links">
+          <div class="footer__contenedor__logo">
+          <img
+            class="footer__logo__alura"
+            src="estilos/HEADER/recursos/logo_alura.svg"
+            alt="logo alura"
+          />
+        </div>
             <a
               class="info__links-links"
               href="http://"
@@ -83,7 +87,7 @@ class MyFooter extends HTMLElement {
               >Anuncie aqui</a
             >
           </div>
-        </div>
+        
 
         <form class="contacto__form">
           <span class="producto__precio">Habla con nosotros</span>
@@ -104,6 +108,7 @@ class MyFooter extends HTMLElement {
             <span class="btn__texto"> Enviar Mensaje </span>
           </button>
         </form>
+        </div>
       </section>
       <section class="seccion__rodapie">
         <div class="web__autor">Desarrollado por Mauro Lizarriaga</div>
