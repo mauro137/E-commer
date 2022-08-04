@@ -35,36 +35,69 @@
   <body class="panel__admin">
     <my-header></my-header>
     <main class="agregar__producto">
-      <section class="agregar__producto__form">
+      <form class="agregar__producto__form">
         <h3 class="panel__titulo">Agregar Producto</h3>
         <div class="form__input__box">
-          <label class="label__input__form" for="input__url">URL de la imagen</label>
-          <input id="input__url" class="panel__input" type="text" />
+          <label class="label__input__form" for="input__url"
+            >URL de la imagen</label
+          >
+          <input
+            id="input__url"
+            class="panel__input"
+            type="file"
+            required
+            autocomplete="off"
+          />
         </div>
         <div class="form__input__box">
-          <label for="form__input__categoria" class="label__input__form">Categoria</label>
-          <input id="form__input__categoria" class="panel__input" type="text" />
+          <label for="form__input__categoria" class="label__input__form"
+            >Categoria</label
+          >
+          <input
+            id="form__input__categoria"
+            class="panel__input"
+            type="text"
+            required
+            autocomplete="off"
+          />
         </div>
         <div class="form__input__box">
-          <label for="form__input__nombre" class="label__input__form">Nombre del producto</label>
-          <input id="form__input__nombre" class="panel__input" type="text" />
+          <label for="form__input__nombre" class="label__input__form"
+            >Nombre del producto</label
+          >
+          <input
+            id="form__input__nombre"
+            class="panel__input"
+            type="text"
+            required
+            autocomplete="off"
+          />
         </div>
         <div class="form__input__box">
-          <label for="form__input__precio" class="label__input__form">Precio del producto</label>
-          <input class="panel__input" type="text" />
+          <label for="form__input__precio" class="label__input__form"
+            >Precio del producto</label
+          >
+          <input class="panel__input" type="text" required autocomplete="off" />
         </div>
-        <div class="form__input__box"> 
-          <label for="producto__descripcion" class="label__input__form">Descripcion del producto</label>
-        <textarea
-          name="producto__descripcion"
-          id="producto__descripcion"
-          cols="30"
-          rows="10"
-        ></textarea>
+        <div class="form__input__box">
+          <label for="producto__descripcion" class="label__input__form"
+            >Descripcion del producto</label
+          >
+          <textarea
+            name="producto__descripcion"
+            id="producto__descripcion"
+            cols="30"
+            rows="10"
+            required
+            autocomplete="off"
+          ></textarea>
         </div>
-        <button class="login__button login__button--producto">Agregar Producto</button>
-      </section>
+        <button class="login__button login__button--producto">
+          Agregar Producto
+        </button>
+      </form>
     </main>
     <my-footer></my-footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </body>
 </html>

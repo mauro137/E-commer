@@ -43,7 +43,7 @@ class MyFooter extends HTMLElement {
             src="estilos/HEADER/recursos/logo_alura.svg"
             alt="logo alura"
           />
-        </div>
+        </div>  
             <a
               class="info__links-links"
               href="http://"
