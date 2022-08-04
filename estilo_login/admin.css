@@ -56,3 +56,27 @@
 .login__button--producto {
   width: 100%;
 }
+
+#input__url{
+  cursor: pointer;
+  padding: 2px;
+  
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: "Raleway";
+  
+}
+
+#input__url::-webkit-file-upload-button{
+  cursor: pointer;
+  background-color: #2a7ae4;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  font-family: "Raleway";
+  margin-right: 1rem;
+  
+}
+
+

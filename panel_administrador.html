@@ -38,15 +38,14 @@
       <form class="agregar__producto__form">
         <h3 class="panel__titulo">Agregar Producto</h3>
         <div class="form__input__box">
-          <label class="label__input__form" for="input__url"
-            >URL de la imagen</label
-          >
+          <label class="label__input__form label__input__form--file" for="input__url"
+            >  Url de la imagen </label >
           <input
             id="input__url"
             class="panel__input"
             type="file"
             required
-            autocomplete="off"
+            autocomplete="off"  
           />
         </div>
         <div class="form__input__box">
@@ -98,6 +97,9 @@
       </form>
     </main>
     <my-footer></my-footer>
+    <script src="admin-panel/CRUD.js"></script>
+    <script src="login/Usuario.js"></script>
+    <script src="login/validation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </body>
 </html>
