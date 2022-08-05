@@ -37,48 +37,56 @@
     <main class="agregar__producto">
       <form class="agregar__producto__form">
         <h3 class="panel__titulo">Agregar Producto</h3>
-        <div class="form__input__box">
-          <label class="label__input__form label__input__form--file" for="input__url"
-            >  Url de la imagen </label >
+        <div class="form__input__box form__input__box--url ">
+          <label
+            class="label__input__form label__input__form--file"
+            for="input__url"
+          >
+            Url de la imagen
+          </label>
           <input
             id="input__url"
             class="panel__input"
             type="file"
             required
-            autocomplete="off"  
-          />
-        </div>
-        <div class="form__input__box">
-          <label for="form__input__categoria" class="label__input__form"
-            >Categoria</label
-          >
-          <input
-            id="form__input__categoria"
-            class="panel__input"
-            type="text"
-            required
             autocomplete="off"
           />
         </div>
-        <div class="form__input__box">
+        <div class="form__input__box form__input__box--categoria">
+          <label for="form__input__categoria" class="label__input__form"
+            >Categoria</label
+          >
+          <select
+            name="categoria"
+            id="form__input__categoria"
+            class="panel__input"
+            required
+          >
+            <option selected disabled>Elige la categoria</option>
+            <option value="Star_wars">Star Wars</option>
+            <option value="Consolas">Consolas</option>
+            <option value="Diversos">Diversos</option>
+          </select>
+        </div>
+        <div class="form__input__box" id="nombre">
           <label for="form__input__nombre" class="label__input__form"
             >Nombre del producto</label
           >
           <input
+            name="form__input__nombre"
             id="form__input__nombre"
             class="panel__input"
             type="text"
-            required
             autocomplete="off"
           />
         </div>
-        <div class="form__input__box">
+        <div class="form__input__box" id="precio">
           <label for="form__input__precio" class="label__input__form"
             >Precio del producto</label
           >
-          <input class="panel__input" type="text" required autocomplete="off" />
+          <input name="form__input__precio" id="form__input__precio" class="panel__input" type="text" required autocomplete="off" />
         </div>
-        <div class="form__input__box">
+        <div class="form__input__box" id="descripcion">
           <label for="producto__descripcion" class="label__input__form"
             >Descripcion del producto</label
           >
@@ -87,11 +95,10 @@
             id="producto__descripcion"
             cols="30"
             rows="10"
-            required
             autocomplete="off"
           ></textarea>
         </div>
-        <button class="login__button login__button--producto">
+        <button type="submit" class="login__button login__button--producto">
           Agregar Producto
         </button>
       </form>

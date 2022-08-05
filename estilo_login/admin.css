@@ -36,7 +36,8 @@
   width: 100%;
   border-radius: 4px;
   gap: 4px;
-  height: 56px;
+  height: 60px;
+ 
 }
 
 .label__input__form {
@@ -56,15 +57,13 @@
 .login__button--producto {
   width: 100%;
 }
-
+/* Campo Imagen */
 #input__url{
   cursor: pointer;
-  padding: 2px;
-  
+  padding: .4rem;
   font-size: 0.8rem;
   font-weight: 500;
   font-family: "Raleway";
-  
 }
 
 #input__url::-webkit-file-upload-button{
@@ -78,5 +77,28 @@
   margin-right: 1rem;
   
 }
+
+/* Campo categoria */
+#form__input__categoria{
+  cursor: pointer;
+  background-color: #2a7ae4;
+  color: white;
+  font-family: "Raleway";
+  font-weight: 300;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 5px;
+  padding: .4rem;
+  appearance: none;
+}
+
+.formulario__correcto{
+  border: 3px solid green;
+}
+
+.formulario__incorrecto{
+  border: 3px solid red;
+}
+
 
 
