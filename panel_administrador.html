@@ -35,14 +35,18 @@
   <body class="panel__admin">
     <my-header></my-header>
     <main class="agregar__producto">
-      <form class="agregar__producto__form">
-        <h3 class="panel__titulo">Agregar Producto</h3>
-        <div class="form__input__box form__input__box--url ">
+      <form name="myform" class="agregar__producto__form" spellcheck="false">
+        <h3 class="panel__titulo">
+          Agregar Producto
+          <span class="form__exito">PRODUCTO AGREGADO CON EXITO!</span>
+          <span class="form__error">ERROR, REVISAR FORMULARIO</span>
+        </h3>
+        <div class="form__input__box form__input__box--url">
           <label
             class="label__input__form label__input__form--file"
             for="input__url"
           >
-            Url de la imagen
+            Url de la imagen - formatos JPG, PNG , WEBM y SVG
           </label>
           <input
             id="input__url"
@@ -50,6 +54,7 @@
             type="file"
             required
             autocomplete="off"
+            accept=".png, .jpg, .bmp, .svg"
           />
         </div>
         <div class="form__input__box form__input__box--categoria">
@@ -57,12 +62,12 @@
             >Categoria</label
           >
           <select
-            name="categoria"
+            name="form__input__categoria"
             id="form__input__categoria"
             class="panel__input"
             required
           >
-            <option selected disabled>Elige la categoria</option>
+            <option value="" selected disabled>Elige la categoria</option>
             <option value="Star_wars">Star Wars</option>
             <option value="Consolas">Consolas</option>
             <option value="Diversos">Diversos</option>
@@ -70,25 +75,33 @@
         </div>
         <div class="form__input__box" id="nombre">
           <label for="form__input__nombre" class="label__input__form"
-            >Nombre del producto</label
-          >
+            >Nombre del producto - Max 20 caracteres
+          </label>
           <input
             name="form__input__nombre"
             id="form__input__nombre"
             class="panel__input"
             type="text"
             autocomplete="off"
+            required
           />
         </div>
         <div class="form__input__box" id="precio">
           <label for="form__input__precio" class="label__input__form"
-            >Precio del producto</label
+            >Precio del producto - solo numeros</label
           >
-          <input name="form__input__precio" id="form__input__precio" class="panel__input" type="text" required autocomplete="off" />
+          <input
+            name="form__input__precio"
+            id="form__input__precio"
+            class="panel__input"
+            type="text"
+            required
+            autocomplete="off"
+          />
         </div>
         <div class="form__input__box" id="descripcion">
           <label for="producto__descripcion" class="label__input__form"
-            >Descripcion del producto</label
+            >Descripcion del producto - Max 150 caracteres</label
           >
           <textarea
             name="producto__descripcion"
@@ -96,6 +109,7 @@
             cols="30"
             rows="10"
             autocomplete="off"
+            required
           ></textarea>
         </div>
         <button type="submit" class="login__button login__button--producto">

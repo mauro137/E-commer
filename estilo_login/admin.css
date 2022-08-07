@@ -99,6 +99,24 @@
 .formulario__incorrecto{
   border: 3px solid red;
 }
+.form__exito{
+  display: none;
+  
+  font-size: 1.35rem;
+  font-family: "Montserrat", sans-serif;
+  color: green;
+}
+.form__exito--mostrar{
+  display: block;
+}
+.form__error{
+ display: none;
+  font-size: 1.35rem;
+  font-family: "Montserrat", sans-serif;
+  color: red;
+}
+.form__error--mostrar{
+  display: block;
 
-
+}
 
