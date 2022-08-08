@@ -32,10 +32,6 @@ class MyFooter extends HTMLElement {
       <footer class="footer">
       <section class="seccion__contacto">
         <div class="footer__info__frecuente">
-  
-        
-
-        
           <div class="info__frecuente__links">
           <div class="footer__contenedor__logo">
           <img
@@ -87,19 +83,19 @@ class MyFooter extends HTMLElement {
               >Anuncie aqui</a
             >
           </div>
-        
-
         <form class="contacto__form">
           <span class="producto__precio">Habla con nosotros</span>
           <input
             type="text"
+            name="contacto__nombre"
+            id="contacto__nombre"
             placeholder="Nombre"
             spellcheck="false"
             autocomplete="off"
           />
           <textarea
-            name="mensaje"
-            id="mensaje"
+            name="contacto__mensaje"
+            id="contacto__mensaje"
             cols="20"
             rows="4"
             placeholder="Escribe un mensaje"

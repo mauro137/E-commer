@@ -2,9 +2,7 @@ const productoForm = document.querySelector(".agregar__producto__form");
 const nombre = document.querySelector("#form__input__nombre");
 const precio = document.querySelector("#form__input__precio");
 const descripcion = document.querySelector("#producto__descripcion");
-const inputs = document.querySelectorAll(
-  ".agregar__producto__form input, textarea"
-);
+const inputs = document.querySelectorAll(".agregar__producto__form input, textarea");
 const textarea = document.querySelector(".agregar__producto");
 const btnSubmit = document.querySelector(".login__button--producto");
 
@@ -23,21 +21,20 @@ const campos = {
 
 const validarFormulario = (e) => {
   switch (e.target.name) {
-    case "form__input__nombre":
+    case `form__input__nombre`:
       validarCampo(expresiones.nombre, e.target, "nombre");
       break;
-    case "form__input__precio":
+    case `form__input__precio`:
       validarCampo(expresiones.precio, e.target, "precio");
       break;
-    case "producto__descripcion":
+    case `producto__descripcion`:
       validarCampo(expresiones.descripcion, e.target, "descripcion");
       break;
   }
 };
 
 const validarCampo = (expresion, input, campo) => {
-  let campoBox = document.getElementById(`${campo}`);
-  console.log(campoBox);
+  let campoBox = document.getElementById(`form__input__${campo}`);
   if (expresion.test(input.value)) {
     campoBox.classList.remove("formulario__incorrecto");
     campoBox.classList.add("formulario__correcto");
@@ -48,9 +45,6 @@ const validarCampo = (expresion, input, campo) => {
     campos[campo] = false;
   }
 };
-
-textarea.addEventListener("keyup", validarFormulario);
-textarea.addEventListener("blur", validarFormulario);
 
 inputs.forEach((input) => {
   input.addEventListener("keyup", validarFormulario);
@@ -74,9 +68,9 @@ productoForm.addEventListener("submit", (e) => {
         campo_valido.classList.remove("formulario__correcto");
       });
   } else {
-   msgError.classList.add('form__error--mostrar');
-   setTimeout(() => {
-    msgError.classList.remove("form__error--mostrar");
-  }, 5000);
+    msgError.classList.add("form__error--mostrar");
+    setTimeout(() => {
+      msgError.classList.remove("form__error--mostrar");
+    }, 5000);
   }
 });

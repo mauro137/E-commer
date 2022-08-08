@@ -27,7 +27,9 @@
       rel="stylesheet"
     />
     <script type="module" src="js/header_footer.js"></script>
-    <link rel="stylesheet" href="estilos/media-queries.css">
+    <link rel="stylesheet" href="estilos/media-queries.css" />
+    <link rel="stylesheet" href="estilo_login/admin.css">
+   
     <title>E-commer</title>
   </head>
   <body class="body">
@@ -38,10 +40,9 @@
         <span class="promocion__info"
           >Productos seleccionados con 33% de descuento</span
         >
-        <button class="btn__promocion">
-          <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-          <p class="btn__texto">Ver consolas</p>
-        </button>
+        <a href="/ver-consolas.html" target="_blank" class="btn__promocion"
+          ><p class="btn__texto">Ver consolas</p>
+        </a>
       </div>
     </section>
     <section class="seccion__productos producto--star_wars">
@@ -399,7 +400,92 @@
         </div>
       </div>
     </section>
-    <my-footer></my-footer>
-   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <footer class="footer">
+      <section class="seccion__contacto">
+        <div class="footer__info__frecuente">
+          <div class="info__frecuente__links">
+          <div class="footer__contenedor__logo">
+          <img
+            class="footer__logo__alura"
+            src="estilos/HEADER/recursos/logo_alura.svg"
+            alt="logo alura"
+          />
+        </div>  
+            <a
+              class="info__links-links"
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Quienes somos</a
+            >
+            <a
+              class="info__links-links"
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Politica de privacidad</a
+            >
+            <a
+              class="info__links-links"
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Programa de fidelidad</a
+            >
+            <a
+              class="info__links-links"
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Nuestras tiendas</a
+            >
+            <a
+              class="info__links-links"
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Quiero ser franquiciado</a
+            >
+            <a
+              class="info__links-links"
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Anuncie aqui</a
+            >
+          </div>
+        <form class="contacto__form">
+          <span class="producto__precio">Habla con nosotros</span>
+          <input
+            type="text"
+            name="contacto__nombre"
+            id="contacto__nombre"
+            placeholder="Nombre"
+            spellcheck="false"
+            autocomplete="off"
+            required
+          />
+          <textarea
+            name="contacto__mensaje"
+            id="contacto__mensaje"
+            cols="20"
+            rows="4"
+            placeholder="Escribe un mensaje"
+            autocomplete="off"
+            required
+          ></textarea>
+          <button class="btn__promocion" type="submit">
+            <span class="btn__texto"> Enviar Mensaje </span>
+          </button>
+        </form>
+        </div>
+      </section>
+      <section class="seccion__rodapie">
+        <div class="web__autor">Desarrollado por Mauro Lizarriaga</div>
+      </section>
+    </footer>
+    <!-- <my-footer></my-footer> -->
+    <script src="login/validacion-contacto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </body>
 </html>
