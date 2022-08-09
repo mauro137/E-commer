@@ -1,10 +1,10 @@
 const contactoForm = document.querySelector(".contacto__form");
 const inputsContacto = document.querySelectorAll(".contacto__form input, textarea");
-const nombre = document.getElementById("contacto__nombre");
+const contactoNombre = document.getElementById("contacto__nombre");
 const mensaje = document.getElementById("contacto__mensaje");
 
 const expresionesContacto = {
-  nombre: /^([A-Za-z]){1,40}$/,
+  nombre: /^([A-Za-z ]){1,40}$/,
   mensaje: /^([A-Za-z0-9!#%$+-?=*&".,]){1,120}$/,
 };
 
@@ -14,19 +14,18 @@ const camposContacto = {
 };
 
 const validarContacto = (e) => {
-  console.log(e.target.name)
   switch (e.target.name) {
     case `contacto__nombre`:
-      validarcampoContacto(expresionesContacto.nombre, e.target,"nombre");
+      validarcampoContacto(expresionesContacto.nombre, e.target, "nombre");
       break;
     case `contacto__mensaje`:
-      validarcampoContacto(expresionesContacto.mensaje,e.target,"mensaje");
+      validarcampoContacto(expresionesContacto.mensaje, e.target, "mensaje");
       break;
   }
 };
 
 const validarcampoContacto = (expresion, input, campo) => {
-console.log(campo)
+  console.log(campo);
   let campoBox = document.getElementById(`contacto__${campo}`);
   if (expresion.test(input.value)) {
     campoBox.classList.remove("formulario__incorrecto");
@@ -48,14 +47,18 @@ inputsContacto.forEach((input) => {
   input.addEventListener("blur", validarContacto);
 });
 
-  contactoForm.addEventListener("submit", (e) => {
-  let msgExito = document.querySelector("#contacto__nombre");
-  let msgError = document.querySelector("#contacto__mensaje");
+
+eventoSubmit(contactoForm,`contacto`);
+
+/* contactoForm.addEventListener("submit", (e, form) => {
+  let msgExito = document.querySelector(`.${form}__exito`);
+  let msgError = document.querySelector(`.contacto__error`);
   e.preventDefault();
   if (camposContacto.nombre && camposContacto.mensaje) {
-    msgExito.classList.add("form__exito--mostrar");
+    msgError.classList.remove("contacto__error--mostrar");
+    msgExito.classList.add("contacto__exito--mostrar");
     setTimeout(() => {
-      msgExito.classList.remove("form__exito--mostrar");
+      msgExito.classList.remove("contacto__exito--mostrar");
     }, 5000);
     contactoForm.reset();
     document
@@ -64,11 +67,11 @@ inputsContacto.forEach((input) => {
         campo_valido.classList.remove("formulario__correcto");
       });
   } else {
-    msgError.classList.add("form__error--mostrar");
+    msgExito.classList.remove("contacto__exito--mostrar");
+    msgError.classList.add("contacto__error--mostrar");
     setTimeout(() => {
-      msgError.classList.remove("form__error--mostrar");
+      msgError.classList.remove("contacto__error--mostrar");
     }, 5000);
   }
-});  
-
+}); */
 

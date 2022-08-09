@@ -35,7 +35,7 @@
   <body class="panel__admin">
     <my-header></my-header>
     <main class="agregar__producto">
-      <form name="myform" class="agregar__producto__form" spellcheck="false">
+      <form name="myform" class="agregar__producto__form" spellcheck="false" autocomplete="off">
         <h3 class="panel__titulo">
           Agregar Producto
           <span class="form__exito">PRODUCTO AGREGADO CON EXITO!</span>
@@ -52,8 +52,7 @@
             id="input__url"
             class="panel__input"
             type="file"
-            required
-            autocomplete="off"
+            required    
             accept=".png, .jpg, .bmp, .svg"
           />
         </div>
@@ -82,7 +81,6 @@
             id="form__input__nombre"
             class="panel__input"
             type="text"
-            autocomplete="off"
             required
           />
         </div>
@@ -95,8 +93,7 @@
             id="form__input__precio"
             class="panel__input"
             type="text"
-            required
-            autocomplete="off"
+            required     
           />
         </div>
         <div class="form__input__box" id="descripcion">
@@ -108,7 +105,6 @@
             id="form__input__descripcion"
             cols="30"
             rows="10"
-            autocomplete="off"
             required
           ></textarea>
         </div>

@@ -29,7 +29,6 @@
     <script type="module" src="js/header_footer.js"></script>
     <link rel="stylesheet" href="estilos/media-queries.css" />
     <link rel="stylesheet" href="estilo_login/admin.css">
-   
     <title>E-commer</title>
   </head>
   <body class="body">
@@ -454,25 +453,23 @@
               >Anuncie aqui</a
             >
           </div>
-        <form class="contacto__form">
-          <span class="producto__precio">Habla con nosotros  <span>MENSAJE ENVIADO CON EXITO!</span></span>
-         
+        <form class="contacto__form" spellcheck='false' autocomplete="off">
+          <span class="contacto__error">ERROR, REVISAR CAMPOS DEL FORMULARIO</span>
+          <span class="contacto__exito">MENSAJE ENVIADO CON EXITO!</span> 
+          <span class="producto__precio">Habla con nosotros  </span>
           <input
             type="text"
             name="contacto__nombre"
-            id="contacto__nombre"
-            placeholder="Nombre"
-            spellcheck="false"
-            autocomplete="off"
+            id="contacto__nombre"        
             required
+            placeholder="Nombre (solo letras)"
           />
           <textarea
             name="contacto__mensaje"
             id="contacto__mensaje"
             cols="20"
             rows="4"
-            placeholder="Escribe un mensaje"
-            autocomplete="off"
+            placeholder="Escribe un mensaje"    
             required
           ></textarea>
           <button class="btn__promocion" type="submit">

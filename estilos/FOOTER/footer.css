@@ -53,17 +53,14 @@
 }
 
 /* Seccion del formulario de envio mensaje */
-
 .contacto__form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
   width: 100%;
- 
-  
+  font-family: "Montserrat", sans-serif;
 }
-
 /* Rodapie */
 .seccion__rodapie {
   display: flex;
@@ -82,8 +79,35 @@
   font-weight: 500;
   height: 38px;
 }
-#mensaje{
+#contacto__mensaje{
   resize: none;
  
 }
+
+.contacto__exito{
+  display: none;
+  align-self: center;
+  color: green;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+}
+
+.contacto__exito--mostrar{
+  display: block;
+}
+
+.contacto__error{
+  display: none;
+  align-self: center;
+  color: red;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+}
+
+.contacto__error--mostrar{
+  display: block;
+}
+
 
