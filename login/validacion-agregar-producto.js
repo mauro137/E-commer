@@ -1,14 +1,14 @@
 const productoForm = document.querySelector(".agregar__producto__form");
 const nombre = document.querySelector("#form__input__nombre");
 const precio = document.querySelector("#form__input__precio");
-const descripcion = document.querySelector("#producto__descripcion");
+const descripcion = document.querySelector("#form__input__descripcion");
 const inputs = document.querySelectorAll(".agregar__producto__form input, textarea");
 const textarea = document.querySelector(".agregar__producto");
 const btnSubmit = document.querySelector(".login__button--producto");
 
 const expresiones = {
   nombre: /^([A-Za-z ]){1,20}$/,
-  precio: /[^a-z ]\ *([.0-9])*\d/g,
+  precio: / *([.0-9])*\d/,
   descripcion: /^([A-Za-z0-9!#%$+-? =*&".,]){1,150}$/,
 };
 
@@ -27,7 +27,7 @@ const validarFormulario = (e) => {
     case `form__input__precio`:
       validarCampo(expresiones.precio, e.target, "precio");
       break;
-    case `producto__descripcion`:
+    case `form__input__descripcion`:
       validarCampo(expresiones.descripcion, e.target, "descripcion");
       break;
   }

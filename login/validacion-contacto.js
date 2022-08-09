@@ -48,7 +48,7 @@ inputsContacto.forEach((input) => {
   input.addEventListener("blur", validarContacto);
 });
 
-/*  contactoForm.addEventListener("submit", (e) => {
+  contactoForm.addEventListener("submit", (e) => {
   let msgExito = document.querySelector("#contacto__nombre");
   let msgError = document.querySelector("#contacto__mensaje");
   e.preventDefault();
@@ -69,6 +69,6 @@ inputsContacto.forEach((input) => {
       msgError.classList.remove("form__error--mostrar");
     }, 5000);
   }
-});  */
+});  
 
 
