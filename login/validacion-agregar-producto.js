@@ -7,7 +7,6 @@ const inputs = document.querySelectorAll(
 );
 const textarea = document.querySelector(".agregar__producto");
 const btnSubmit = document.querySelector(".login__button--producto");
-
 const expresiones = {
   nombre: /^([A-Za-z ]){1,20}$/,
   precio: / *([.0-9])*\d/,
@@ -53,31 +52,27 @@ inputs.forEach((input) => {
   input.addEventListener("blur", validarFormulario);
 });
 
-function eventoSubmit(Form,classForm) {
-  Form.addEventListener("submit", (e) => {
-    let msgExito = document.querySelector(`.${classForm}__exito`);
-    let msgError = document.querySelector(`.${classForm}__error`);
-    e.preventDefault();
-    if (campos.nombre && campos.precio && campos.descripcion) {
-      msgError.classList.remove(`${classForm}__error--mostrar`);
-      msgExito.classList.add(`${classForm}__exito--mostrar`);
-      setTimeout(() => {
-        msgExito.classList.remove(`${classForm}__exito--mostrar`);
-      }, 5000);
-      productoForm.reset();
-      document
-        .querySelectorAll(`.formulario__correcto`)
-        .forEach((campo_valido) => {
-          campo_valido.classList.remove(`formulario__correcto`);
-        });
-    } else {
-      msgExito.classList.remove(`${classForm}__exito--mostrar`);
-      msgError.classList.add(`${classForm}__error--mostrar`);
-      setTimeout(() => {
-        msgError.classList.remove(`${classForm}__error--mostrar`);
-      }, 5000);
-    }
-  });
-}
-
-eventoSubmit(productoForm, `form`);
+productoForm.addEventListener("submit", (e) => {
+  let msgExito = document.querySelector(`.form__exito`);
+  let msgError = document.querySelector(`.form__error`);
+  e.preventDefault();
+  if (campos.nombre && campos.precio && campos.descripcion) {
+    msgError.classList.remove(`form__error--mostrar`);
+    msgExito.classList.add(`form__exito--mostrar`);
+    setTimeout(() => {
+      msgExito.classList.remove(`form__exito--mostrar`);
+    }, 5000);
+    productoForm.reset();
+    document
+      .querySelectorAll(`.formulario__correcto`)
+      .forEach((campo_valido) => {
+        campo_valido.classList.remove(`formulario__correcto`);
+      });
+  } else {
+    msgExito.classList.remove(`form__exito--mostrar`);
+    msgError.classList.add(`form__error--mostrar`);
+    setTimeout(() => {
+      msgError.classList.remove(`form__error--mostrar`);
+    }, 5000);
+  }
+});

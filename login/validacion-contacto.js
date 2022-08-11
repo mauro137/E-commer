@@ -3,12 +3,13 @@ const inputsContacto = document.querySelectorAll(".contacto__form input, textare
 const contactoNombre = document.getElementById("contacto__nombre");
 const mensaje = document.getElementById("contacto__mensaje");
 
+
 const expresionesContacto = {
   nombre: /^([A-Za-z ]){1,40}$/,
   mensaje: /^([A-Za-z0-9!#%$+-?=*&".,]){1,120}$/,
 };
 
-const camposContacto = {
+const camposContacto = {  
   nombre: false,
   mensaje: false,
 };
@@ -25,7 +26,6 @@ const validarContacto = (e) => {
 };
 
 const validarcampoContacto = (expresion, input, campo) => {
-  console.log(campo);
   let campoBox = document.getElementById(`contacto__${campo}`);
   if (expresion.test(input.value)) {
     campoBox.classList.remove("formulario__incorrecto");
@@ -47,14 +47,11 @@ inputsContacto.forEach((input) => {
   input.addEventListener("blur", validarContacto);
 });
 
-
-eventoSubmit(contactoForm,`contacto`);
-
-/* contactoForm.addEventListener("submit", (e, form) => {
-  let msgExito = document.querySelector(`.${form}__exito`);
-  let msgError = document.querySelector(`.contacto__error`);
+ contactoForm.addEventListener("submit", (e) => {
+  let msgExito = document.querySelector(".contacto__exito");
+  let msgError = document.querySelector(".contacto__error");
   e.preventDefault();
-  if (camposContacto.nombre && camposContacto.mensaje) {
+if (camposContacto.nombre && camposContacto.mensaje) {
     msgError.classList.remove("contacto__error--mostrar");
     msgExito.classList.add("contacto__exito--mostrar");
     setTimeout(() => {
@@ -73,5 +70,5 @@ eventoSubmit(contactoForm,`contacto`);
       msgError.classList.remove("contacto__error--mostrar");
     }, 5000);
   }
-}); */
+}); 
 

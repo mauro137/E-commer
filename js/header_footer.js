@@ -84,6 +84,8 @@ class MyFooter extends HTMLElement {
             >
           </div>
         <form class="contacto__form">
+        <span class="contacto__error">ERROR, REVISAR FORMULARIO </span>
+          <span class="contacto__exito"> MENSAJE ENVIADO CON EXITO </span>
           <span class="producto__precio">Habla con nosotros</span>
           <input
             type="text"
