@@ -102,7 +102,7 @@ class MyFooter extends HTMLElement {
             rows="4"
             placeholder="Escribe un mensaje"
           ></textarea>
-          <button class="btn__promocion" type="submit">
+          <button class="btn__promocion" type="submit" id="btn__contacto">
             <span class="btn__texto"> Enviar Mensaje </span>
           </button>
         </form>

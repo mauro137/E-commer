@@ -2,7 +2,7 @@ const contactoForm = document.querySelector(".contacto__form");
 const inputsContacto = document.querySelectorAll(".contacto__form input, textarea");
 const contactoNombre = document.getElementById("contacto__nombre");
 const mensaje = document.getElementById("contacto__mensaje");
-
+const btnContacto = document.querySelector("#btn__contacto");
 
 const expresionesContacto = {
   nombre: /^([A-Za-z ]){1,40}$/,
@@ -47,7 +47,7 @@ inputsContacto.forEach((input) => {
   input.addEventListener("blur", validarContacto);
 });
 
- contactoForm.addEventListener("submit", (e) => {
+ const enviarMensaje = btnContacto.addEventListener("click", (e) => {
   let msgExito = document.querySelector(".contacto__exito");
   let msgError = document.querySelector(".contacto__error");
   e.preventDefault();

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js"></script>   
     <link rel="stylesheet" href="estilos/normalize.css" />
     <link rel="stylesheet" href="estilos/reset.css" />
     <link rel="stylesheet" href="estilos/base.css" />
@@ -14,7 +15,6 @@
     <link rel="stylesheet" href="estilos/PRODUCTOS/productos-consolas.css" />
     <link rel="stylesheet" href="estilos/PRODUCTOS/productos-diversos.css" />
     <link rel="stylesheet" href="estilos/FOOTER/footer.css" />
-    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,10 +26,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
       rel="stylesheet"
-    />  
+    />
     <link rel="stylesheet" href="estilos/media-queries.css" />
-    <link rel="stylesheet" href="estilo_login/admin.css">
-
+    <link rel="stylesheet" href="estilo_login/admin.css" />
+    <link rel="stylesheet" href="estilo_login/login.css" />
     <title>E-commer</title>
   </head>
   <body class="body">
@@ -63,24 +63,12 @@
             />
           </a>
         </div>
+
       </div>
-      <div class="contenedor__tarjetas">
-        <div class="tarjeta__producto">
-          <img
-            class="tarjeta__imagen"
-            src="estilos/PRODUCTOS/recursos/star-wars/taza.svg"
-            alt="Taza star wars"
-          />
-          <p class="producto__nombre">Taza star wars</p>
-          <span class="producto__precio"> 40 pesitos</span>
-          <a
-            class="producto__link"
-            href="http://"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Ver producto</a
-          >
-        </div>
+      <div class="contenedor__tarjetas" data-section-star-wars>
+        
+
+       
         <div class="tarjeta__producto">
           <img
             class="tarjeta__imagen"
@@ -164,7 +152,10 @@
         </div>
       </div>
     </section>
-    <section class="seccion__productos producto--consolas">
+    <section
+      class="seccion__productos producto--consolas"
+      data-section-consolas
+    >
       <div class="seccion__titulo">
         <h2 class="titulos__estilos">Consolas</h2>
         <div class="ver__todo__contenedor">
@@ -282,7 +273,10 @@
         </div>
       </div>
     </section>
-    <section class="seccion__productos producto--diversos">
+    <section
+      class="seccion__productos producto--diversos"
+      data-section-diversos
+    >
       <div class="seccion__titulo">
         <h2 class="titulos__estilos">Diversos</h2>
         <div class="ver__todo__contenedor">
@@ -400,10 +394,9 @@
         </div>
       </div>
     </section>
-    
-   <my-footer></my-footer> 
-   <script async type="module" src="js/header_footer.js"></script>
-    <script async type="module" src="login/validacion-contacto.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <my-footer></my-footer>
+    <script type="module" src="custom-elements/header_footer.js" ></script>
+    <script type="module" src="controladores/contact/validacion-contacto.js" async defer></script>
+    <script type="module" src="admin-panel/validacion-agregar-producto.js" async defer></script>
   </body>
 </html>
