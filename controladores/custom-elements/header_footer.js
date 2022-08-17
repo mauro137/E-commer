@@ -1,26 +1,26 @@
 class MyHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = ` 
-      <header class="header">
-      <img
-        class="header__logo"
-        src="estilos/HEADER/recursos/logo_alura.svg"
-        alt="Logo alura"
-      />
-      <button class="header__btn__login">
-        <a href="/seccion-login.html" target="_blank">
-          <span class="btnLogin__txt"> Login </span></a
-        >
-      </button>
-      <div class="buscador"> 
-      <input type="text" class="buscador__input" placeholder="¿Que deseas hacer?">
-      <img
-        class="lupa__logo"
-        src="estilos/HEADER/recursos/lupa.svg"
-        alt="Lupa buscador"
-      />
-      </div>
-    </header> 
+    <header class="header">
+    <img
+      class="header__logo"
+      src="../styles/main/HEADER/recursos/logo_alura.svg"
+      alt="Logo alura"
+    />
+    <button class="header__btn__login">
+      <a href="seccion-login.html" target="_blank">
+        <span class="btnLogin__txt"> Login </span></a
+      >
+    </button>
+    <div class="buscador"> 
+    <input type="text" class="buscador__input" placeholder="¿Que deseas hacer?">
+    <img
+      class="lupa__logo"
+      src="../styles/main/HEADER/recursos/lupa.svg"
+      alt="Lupa buscador"
+    />
+    </div>
+  </header>
           `;
   }
 }
@@ -36,7 +36,7 @@ class MyFooter extends HTMLElement {
           <div class="footer__contenedor__logo">
           <img
             class="footer__logo__alura"
-            src="estilos/HEADER/recursos/logo_alura.svg"
+            src="../styles/main/HEADER/recursos/logo_alura.svg"
             alt="logo alura"
           />
         </div>  
