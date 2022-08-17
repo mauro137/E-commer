@@ -55,18 +55,17 @@ inputs.forEach((input) => {
   input.addEventListener("blur", validarFormulario);
 });
 
-const agregarProducto = btnSubmit.addEventListener("click", (e) => {
+const addProduct = btnSubmit.addEventListener("click", (e) => {
   let msgExito = document.querySelector(`.form__exito`);
   let msgError = document.querySelector(`.form__error`);
   e.preventDefault();
   if (campos.nombre && campos.precio && campos.descripcion) {
-    crearElemento();
+    createProduct();
     msgError.classList.remove(`form__error--mostrar`);
     msgExito.classList.add(`form__exito--mostrar`);
     setTimeout(() => {
       msgExito.classList.remove(`form__exito--mostrar`);
-    }, 3000);
-    
+    }, 3000);  
     productoForm.reset();
     document
       .querySelectorAll(`.formulario__correcto`)
@@ -82,7 +81,7 @@ const agregarProducto = btnSubmit.addEventListener("click", (e) => {
   }
 });
 
- const crearElemento = () => {
+ const createProduct = () => {
   let categorieValue = categoria.value;
   let cardConteiner = document.querySelector('[data-section-star-wars]');
   let element = document.createElement('div');
@@ -90,7 +89,6 @@ const agregarProducto = btnSubmit.addEventListener("click", (e) => {
   let imageValue = imagen.value;
   let nameValue = nombre.value;
   let priceValue = precio.value;
- 
   let content = `<img
   class="tarjeta__imagen"
   src="${imageValue}"
